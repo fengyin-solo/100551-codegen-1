@@ -35,3 +35,27 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+
+/* 特殊管理药品专柜台账：分栏卡片、报警区、登记表单、对账区 */
+.cabinet-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 12px; margin-bottom: 8px; }
+.cabinet-card { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+.cabinet-card.alarm { border-color: #f04438; background: #fef6f5; }
+.cabinet-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; font-size: 14px; }
+.cabinet-head span { color: var(--muted); font-size: 12px; }
+.cabinet-line { margin: 2px 0; font-size: 13px; }
+.remaining { font-size: 17px; }
+.alarm-text { color: #b42318; }
+.alarm-zone { background: #fef3f2; border: 1px solid #fecdca; border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.alarm-zone h3 { margin: 0 0 10px; font-size: 14px; color: #b42318; }
+.category-section h3 { font-size: 14px; margin: 16px 0 8px; }
+.entry-form { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin-bottom: 12px; }
+.entry-form label span { display: block; font-size: 12px; color: var(--muted); margin-bottom: 2px; }
+.entry-form input, .entry-form select { border: 1px solid var(--border); border-radius: 6px; padding: 6px 8px; font-size: 13px; }
+.mini-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.mini-table th, .mini-table td { border: 1px solid var(--border); padding: 4px 6px; font-size: 12px; text-align: left; }
+.flag-abnormal { display: inline-block; margin-left: 4px; padding: 0 6px; border-radius: 999px; background: #fef0c7; color: #b54708; font-size: 11px; }
+.reconcile-zone { margin-top: 16px; }
+.reconcile-zone h3 { font-size: 14px; margin: 0 0 8px; }
+.match-ok { color: #027a48; }
+.match-bad { color: #b42318; }
+.notice-text { color: #b54708; }

@@ -4,6 +4,7 @@ import Dashboard from '@/views/Dashboard.vue'
 const Batchrecord = () => import('@/views/batchrecord/index.vue')
 const Cleanroom = () => import('@/views/cleanroom/index.vue')
 const Materialrelease = () => import('@/views/materialrelease/index.vue')
+const Controlleddrug = () => import('@/views/controlleddrug/index.vue')
 const Deviation = () => import('@/views/deviation/index.vue')
 const Changecontrol = () => import('@/views/changecontrol/index.vue')
 const Cleanvalidate = () => import('@/views/cleanvalidate/index.vue')
@@ -27,6 +28,7 @@ const router = createRouter({
     { path: '/batchrecord', name: 'batchrecord', component: Batchrecord },
     { path: '/cleanroom', name: 'cleanroom', component: Cleanroom },
     { path: '/materialrelease', name: 'materialrelease', component: Materialrelease },
+    { path: '/controlleddrug', name: 'controlleddrug', component: Controlleddrug },
     { path: '/deviation', name: 'deviation', component: Deviation },
     { path: '/changecontrol', name: 'changecontrol', component: Changecontrol },
     { path: '/cleanvalidate', name: 'cleanvalidate', component: Cleanvalidate },
